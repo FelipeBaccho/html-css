@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #7a7a7a;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: #666666;
+            padding: 5px;
+            box-shadow: 2px 2px 4px 1px #00000050;
+            /*a sombra pode ser alterada com visualizacao grafica dentro do devtools, facilitando a criacao da maneira desejada*/
+            /*nao alterar a cor da sombra para suaviza-la, mas sim a sua transparencia*/
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+        }
+
+        nav > a:hover {
+            color: black;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px black;
+        }
+
+        article {
+            background-color: #b6b6b6;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: #8d8d8d;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 7px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+            /*border-radius tambem pode ser aplicado por meio de porcentagem*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre arquitetura</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequatur in accusamus. Aliquam, expedita quasi pariatur incidunt ipsa perferendis! Harum voluptas in architecto tempora quam accusamus quisquam ipsum aperiam itaque.</p>
+                <aside>
+                    <p>Artigo escrito por Felipe Baccho</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Noticia sobre tecnologia</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore enim quos obcaecati quia quis fugiat labore est atque! Dignissimos perspiciatis culpa totam error officiis maiores explicabo saepe quo provident ipsa.</p>
+                <aside>
+                    <p>Artigo escrito por Felipe Baccho</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Baccho Studio</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>
+
+<!-- "Grouping tags semanticas" vieram para substituir as antigas <div> e <span>, que ainda podem ser usadas mas nao dao sentido para a pagina como as novas dao.-->

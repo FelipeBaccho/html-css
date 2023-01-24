@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        #completo {
+            width: 300px;
+            height: 50px;
+            background-color: lightgray;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            outline-width: 30px;
+            outline-style: solid;
+            outline-color: blue;
+            margin: 50px;
+        }
+
+        #shorthand {
+            width: 300px;
+            height: 50px;
+            background-color: lightgray;
+            border: 10px solid red;
+            outline: 30px solid blue; 
+            padding: 10px 20px 10px 20px;
+            margin: 50px;
+
+            /*shorthands de border e outline devem respeitar a ordem largura-estilo-cor*/
+
+            /*caso as medidas de padding e margin nao sejam iguais em todos os lados, que no caso teriam uma so medida, seus shorthands devem respeitar a ordem superior-direita-inferior-esquerda*/
+
+            /*no caso desse padding, pelas medidas superior e inferior serem iguais e esquerda e direita serem iguais, poderia usar um shorthand menor com apenas dois numeros na ordem superior/inferior-direita/esquerda, que ficaria "padding: 10px 20px"*/
+        }
+    </style>
+</head>
+<body>
+    <h1 id="completo">Exemplo de caixa</h1>
+    <h1 id="shorthand">Exemplo de caixa</h1>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fontes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* a combinacao de fontes acima tem o nome "CSS web safe font combinations", pois a maior parte dos dispositivos as tera, sendo a ultima uma fonte generica que o dispositivo tenha */
+            color: black;
+        }
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(24, 97, 236);
+            font-size: 2em;
+            font-style: normal;
+            text-decoration: underline;
+            text-align: center;
+        }
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(33, 136, 161);
+            font-size: 1.5em;
+            text-align: right;
+        }
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1em;
+            font-style: italic;
+            font-weight: bolder;
+            text-align: justify;
+            text-indent: 30px;
+        }
+        /*
+        Pode ser usada a simplificacao abaixo (chamada shorthand) para configurar a fonte, na ordem: style, variant, weight, size/line-height, family. 
+        
+        text-indent configura o tamanho do espaco de novo paragrafo
+        */
+        p {
+            font: italic bold 1em 'Courier New', Courier, monospace;
+            text-align: justify;
+            text-indent: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando fontes</h1>
+        <h2>Titulo 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cupiditate deserunt beatae, magni iure doloremque nemo saepe ipsam tempore quaerat est, nobis corrupti ipsa numquam facere animi dolores natus harum.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 320px; /* tamanho minimo da largura de alguns celulares antigos 320px */
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%; /* faz com que a imagem diminua de tamanho proporcionalmente a pagina */ 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus sequi eum porro perspiciatis, commodi quam similique aperiam nesciunt obcaecati ipsa. Illum nisi provident facere iure a est recusandae magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error odio tenetur doloribus eius libero! Error, repellat at harum porro explicabo natus dolorem animi, ullam soluta alias distinctio nihil ipsam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, ullam quod eaque magnam voluptatum molestias id, corrupti aperiam qui voluptate aliquid voluptas! Cupiditate, harum veniam. Expedita ad modi fugit ut?</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg"> <!-- quando a pagina diminui a 600px a imagem menor em source sera carregada (o seletor source-media vem com min-width por padrao, mas melhor trabalhar com max-width)-->
+            <img src="imagens/irina-blok.jpg" alt="Irina Block">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus sequi eum porro perspiciatis, commodi quam similique aperiam nesciunt obcaecati ipsa. Illum nisi provident facere iure a est recusandae magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error odio tenetur doloribus eius libero! Error, repellat at harum porro explicabo natus dolorem animi, ullam soluta alias distinctio nihil ipsam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, ullam quod eaque magnam voluptatum molestias id, corrupti aperiam qui voluptate aliquid voluptas! Cupiditate, harum veniam. Expedita ad modi fugit ut?</p>
+    </main>
+</body>
+</html>

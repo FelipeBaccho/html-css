@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'Deco';
+            src: url('fonts/ArtisualDecoBlack.otf') format('opentype'), url('fonts/ArtisualDecoBlack.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /* 
+        font-face e um seletor especial onde sera importada a fonte baixada, que devera estar na pasta do html.
+        O font-family e um nome que voce mesmo dara para essa especificacao toda, que quando especificado no estilo puxara todas as configuracoes acima.
+        O formato a ser especificado depois da URL depende do tipo de arquivo da fonte, sendo que quanto mais tipos melhor pois mais navegadores serao compativeis, sendo otf e ttf os mais comuns.
+
+        Tipos de format ()
+        - opentype (otf)
+        - truetype (ttf)
+        - embeded-opentype
+        - truetype-aat (apple advanced typography)
+        - svg
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'Deco', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Ola, Mundo!</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quasi animi magnam mollitia odio quam ad possimus, facere dolorem error recusandae neque voluptatum sapiente reiciendis aliquid porro dolorum tenetur numquam.</p>
+    </main>
+</body>
+</html>
