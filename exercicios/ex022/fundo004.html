@@ -7,16 +7,26 @@
     <title>Fundo</title>
     <style>
         body {
+            height: 100vh; /* faz a imagem ocupar 100% do viewport height */
             background-color: black; /* ideal colocar cor de fundo para caso a imagem demore para carregar o usurario ja possa ir consumindo conteudo */
             background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center;
             background-repeat: no-repeat;
-            background-position: center top;
             background-size: cover; /* "cover" faz preencher todo o fundo sem distorcer a imagem. Pode tambem ser utilizado "contain" para que a imagem seja sempre 100% exibida */
+            background-attachment: fixed;
+
+            /* 
+            Shorthand de background: color > image > position > repeat > [size] > attachment
+            obs: a shorthand deveria funcionar com "size" porem esta com defeito no CSS em si, entao por enquanto deve ser colocado fora da shorthand.
+            
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+            */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             margin: auto;
             padding: 10px;
             text-align: justify;
@@ -32,6 +42,7 @@
 <body>
     <main>
         <h1>Papel de parede</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam atque facilis illum illo voluptates, laboriosam dignissimos vero error debitis, neque suscipit delectus et eligendi dolorum aut expedita consequatur. Et! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quaerat earum culpa ad. Eaque sed sunt adipisci nam eos dolore nulla rerum. Sapiente alias at magni debitis, voluptatibus tempora impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nostrum! Quidem, voluptate necessitatibus iusto doloribus sint corporis dolores quod consequatur? Ipsum accusamus enim ipsam, molestias placeat voluptatibus debitis velit expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit autem quo dolores, exercitationem facilis veritatis officia nisi alias eaque non dignissimos qui totam quod at repudiandae tempore temporibus rem.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam atque facilis illum illo voluptates, laboriosam dignissimos vero error debitis, neque suscipit delectus et eligendi dolorum aut expedita consequatur. Et! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quaerat earum culpa ad. Eaque sed sunt adipisci nam eos dolore nulla rerum. Sapiente alias at magni debitis, voluptatibus tempora impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nostrum! Quidem, voluptate necessitatibus iusto doloribus sint corporis dolores quod consequatur? Ipsum accusamus enim ipsam, molestias placeat voluptatibus debitis velit expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit autem quo dolores, exercitationem facilis veritatis officia nisi alias eaque non dignissimos qui totam quod at repudiandae tempore temporibus rem.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam atque facilis illum illo voluptates, laboriosam dignissimos vero error debitis, neque suscipit delectus et eligendi dolorum aut expedita consequatur. Et! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quaerat earum culpa ad. Eaque sed sunt adipisci nam eos dolore nulla rerum. Sapiente alias at magni debitis, voluptatibus tempora impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nostrum! Quidem, voluptate necessitatibus iusto doloribus sint corporis dolores quod consequatur? Ipsum accusamus enim ipsam, molestias placeat voluptatibus debitis velit expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit autem quo dolores, exercitationem facilis veritatis officia nisi alias eaque non dignissimos qui totam quod at repudiandae tempore temporibus rem.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quisquam atque facilis illum illo voluptates, laboriosam dignissimos vero error debitis, neque suscipit delectus et eligendi dolorum aut expedita consequatur. Et! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quaerat earum culpa ad. Eaque sed sunt adipisci nam eos dolore nulla rerum. Sapiente alias at magni debitis, voluptatibus tempora impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nostrum! Quidem, voluptate necessitatibus iusto doloribus sint corporis dolores quod consequatur? Ipsum accusamus enim ipsam, molestias placeat voluptatibus debitis velit expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit autem quo dolores, exercitationem facilis veritatis officia nisi alias eaque non dignissimos qui totam quod at repudiandae tempore temporibus rem.</p>

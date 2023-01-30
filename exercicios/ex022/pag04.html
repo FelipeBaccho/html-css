@@ -6,27 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centralizando imagem de fundo</title>
     <style>
-        div#fora {
-            height: 96vh; /* "vh" significa view height, e ocupa 100% do fundo branco. */
+        #container {
+            height: 96vh; /* "vh" significa viewport height, e ocupa 100% do fundo branco. */
             background-color: #bd7df5;
             position: relative;
         }
 
-        div#dentro {
+        #conteudo {
             height: 200px;
             width: 400px;
             background-color: #f5ff40;
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); /* faz com que a caixa seja centralizada a partir de seu centro, e nao a partir do seu canto superior esquerdo como vem padrao */
         }
     </style>
 </head>
 <body>
-    <div id="fora">
-        <div id="dentro">
-        </div>
-    </div>
+    <section id="container">
+        <article id="conteudo"></article>
+    </section>
 </body>
 </html>
