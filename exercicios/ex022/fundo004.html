@@ -7,16 +7,25 @@
     <title>Fundo</title>
     <style>
         body {
+            background-color: black; /* ideal colocar cor de fundo para caso a imagem demore para carregar o usurario ja possa ir consumindo conteudo */
             background-image: url(imagens/wallpaper002.jpg);
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover; /* "cover" faz preencher todo o fundo sem distorcer a imagem. Pode tambem ser utilizado "contain" para que a imagem seja sempre 100% exibida */
         }
 
         main {
             background-color: white;
             width: 400px;
-            display: block;
             margin: auto;
-            padding: 20px;
+            padding: 10px;
+            text-align: justify;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
         }
     </style>
 </head>
