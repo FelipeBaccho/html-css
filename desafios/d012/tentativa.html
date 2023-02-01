@@ -22,7 +22,11 @@
 
         h1 {
             font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 10vw;
+            font-size: 8vw;
+        }
+
+        h1::first-letter {
+            font-size: 12vw;
         }
 
         h2 {
@@ -44,9 +48,11 @@
         }
 
         .parallax > p {
-            background-color: #00000042;
+            background-color: #00000080;
             color: white;
+            text-shadow: 1px 2px black;
             padding: 5px;
+            width: 47%;
         }
 
         #img01 {
@@ -71,6 +77,10 @@
             line-height: 2em;
         }
 
+        .acima {
+            margin-bottom: 30px;
+        }
+
         footer {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
@@ -79,13 +89,13 @@
             padding: 10px;
         }
 
-        footer > a {
+        a {
             text-decoration: none;
             font-weight: bold;
             color: white;
         }
 
-        footer > a:hover {
+        a:hover {
             text-decoration: underline;
         }
     </style>
@@ -93,7 +103,7 @@
 <body>
     <header>
         <h1>CORDEL MODERNO</h1>
-        <h2>Por <strong>Milton Duarte</strong></h2>
+        <h2>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank">Milton Duarte</a></h2>
     </header>
     <section class="branco">
         <p>
@@ -120,24 +130,24 @@
     </section>
 
     <section class="branco">
-        <p>
-            Arroba agora não pesa<br>
-            É parte de um endereço<br>
-            Ponto final nem se usa<br>
-            Ou vai até no começo<br>
-            Agora é .com<br>
-            Se o saite é muito bom<br>
-            Ele vale um alto preço.
-        </p>
-        <p>
-            Pra piorar a liguagem<br>
-            O emoticom é um risco<br>
-            Tem símbolo para tudo<br>
-            Ponto e vírgula e um asterisco<br>
-            Um beijo significa<br>
-            Pra entender como fica<br>
-            Decifre esse rabisco.
-        </p>
+            <p class="acima">
+                Arroba agora não pesa<br>
+                É parte de um endereço<br>
+                Ponto final nem se usa<br>
+                Ou vai até no começo<br>
+                Agora é .com<br>
+                Se o saite é muito bom<br>
+                Ele vale um alto preço.
+            </p>
+            <p>
+                Pra piorar a liguagem<br>
+                O emoticom é um risco<br>
+                Tem símbolo para tudo<br>
+                Ponto e vírgula e um asterisco<br>
+                Um beijo significa<br>
+                Pra entender como fica<br>
+                Decifre esse rabisco.
+            </p>
     </section>
 
     <section class="parallax" id="img02">
@@ -153,7 +163,7 @@
     </section>
 
     <section class="branco">
-        <p>
+        <p class="acima">
             Agora, escrevo e envio<br>
             Chegando na mesma hora<br>
             Mas quando vou prosear<br>
@@ -174,7 +184,7 @@
     </section>
 
     <footer>
-        Site criado por <a href="https://felipebaccho.github.io/html-css/meus-projetos/curriculo/">Felipe Baccho Terra</a> para o <a href="https://www.cursoemvideo.com/">CursoemVideo</a>
+        Site criado por <a href="https://felipebaccho.github.io/html-css/meus-projetos/curriculo/" target="_blank">Felipe Baccho Terra</a> para o <a href="https://www.cursoemvideo.com/" target="_blank">CursoemVideo</a>
     </footer>
 </body>
 </html>
