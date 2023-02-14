@@ -5,16 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe</title> <!-- "iframe" significa "inline frame"="quadro em linha" -->
+    <style>
+        iframe#borda {
+            border: 3px solid black;
+        }
+        iframe#tamanho {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
-    <p>Acessando o site do <a href="https://www.cursoemvideo.com">CursoemVideo</a> para aprender a programar.</p>
-    
-    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe> para aprender a programar.
-    </p> <!-- O site todo sera carregado dentro desse quadro, como se fosse uma aba (uma nova instancia) dentro da pagina -->
 
-    <p>O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe> tambem e muito legal</p> <!-- site do google nao permite sua exibição em sites de terceiros -->
+    <p>
+        Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0"> [Seu navegador nao e compativel] </iframe> para aprender a programar.
+    </p> 
+    <!-- O site todo sera carregado dentro desse quadro, como se fosse uma aba (uma nova instancia) dentro da pagina. Caso o navegador nao seja compativel o aviso entre as tags aparecera. -->
+
+    <p>
+        Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="1"> [Seu navegador nao e compativel] </iframe> para aprender a programar.
+    </p> 
+    <!-- "frameborder" so possui os valores "0" e "1", sem ou com borda. Pode ser tirada e configurada em css como uma borda normal. -->
+
+    <p>
+        O repositorio do Guanabara <iframe src="https://gustavoguanabara.github.io" frameborder="0" id="borda"> <a href="https://gustavoguanabara.github.io">Curso em Video</a> </iframe> tambem e bem legal.
+    </p> 
+    <!-- Ao inves de um aviso entre as tags que o navegador nao e compativel, pode ser colocado o link que deveria ter aberto no iframe. -->
+
+    <p>
+        O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe> tambem e muito legal, pena que nao funciona dentro do iframe.
+    </p> 
+    <!-- Site do google exemplo de site nao permite sua exibição em sites de terceiros -->
+
+    <p>
+        Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" width="500"> no <a href="https://www.cursoemvideo.com">Curso em Video</a> </iframe> para aprender a programar.
+        Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0" id="tamanho"> no <a href="https://www.cursoemvideo.com">Curso em Video</a> </iframe> para aprender a programar.
+    </p> 
+    <!-- O tamanho padrao do iframe e 300x150px, pode ser alterado inline ou em CSS. -->
+
+    <p>
+        Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="no"> [Seu navegador nao e compativel] </iframe> para aprender a programar.
+    </p>
+    <!-- O parametro "scrolling" pode ser adicionado para que o o site na instancia do iframe nao tenha rolagem. Pode ser "auto" (cria barra de rolagem se necessario), "yes" (mostra barra de rolagem mesmo que nao tenha conteudo a rolar) ou "no" (impede a rolagem e nao mostra a barra de rolagem). -->
+
 </body>
 </html>
 
 <!-- "iframe" é pouco usado mas pode ter usos específicos, porém alguns sites não permitem sua exibição em páginas de terceiros por iframe por problemas de segurança que ele pode causar -->
+
+<!-- Geralmente os navegadores de celular nao tem compatibilidade com iframe, entao o que vai aparecer neles é o texto entre as tags de "iframe" -->
+
