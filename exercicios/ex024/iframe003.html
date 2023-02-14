@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Faca uma escolha</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nam maiores, veniam quaerat aliquam, odio omnis expedita perspiciatis ab quo reprehenderit quam atque, laborum libero quisquam velit eveniet iste asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia at eveniet non laborum ab quia ullam necessitatibus doloribus voluptates maiores voluptas nesciunt nam consequuntur repellat enim accusamus nisi, nemo cum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias ullam quae aperiam sapiente eveniet vero ab veniam modi incidunt, id maiores rerum libero ipsa amet ducimus in, nulla labore obcaecati?</p>
+
+    <ul>
+        <li> <a href="paginas-extras/pagina001.html" target="frame">Primeira pagina</a> </li>
+        <li> <a href="paginas-extras/pagina002.html" target="frame">Segunda pagina</a> </li>
+        <li> <a href="paginas-extras/pagina003.html" target="frame">Terceira pagina</a> </li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nam maiores, veniam quaerat aliquam, odio omnis expedita perspiciatis ab quo reprehenderit quam atque, laborum libero quisquam velit eveniet iste asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia at eveniet non laborum ab quia ullam necessitatibus doloribus voluptates maiores voluptas nesciunt nam consequuntur repellat enim accusamus nisi, nemo cum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias ullam quae aperiam sapiente eveniet vero ab veniam modi incidunt, id maiores rerum libero ipsa amet ducimus in, nulla labore obcaecati?</p>
+
+    <iframe name="frame" srcdoc="<h1>Escolha umas das opcoes</h1><img src='imagens/imagemteste.png'>">
+        <p>Infelizmente seu navegador nao e compativel com isso.</p>
+    </iframe>
+    <!-- Paginas diferentes podem ser carregadas no mesmo iframe, é só colocar um nome "name" neste iframe, e o colocar esse nome como target dos links. Ele por padrao quando abre a pagina vem em branco sem nada, porem pode ser colocado o link da primeira pagina por exemplo para ele abrir direto nela, ou usar a tag "srcdoc" para aplicar um codigo basico HTML dentro do iframe como feito acima. -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nam maiores, veniam quaerat aliquam, odio omnis expedita perspiciatis ab quo reprehenderit quam atque, laborum libero quisquam velit eveniet iste asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia at eveniet non laborum ab quia ullam necessitatibus doloribus voluptates maiores voluptas nesciunt nam consequuntur repellat enim accusamus nisi, nemo cum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias ullam quae aperiam sapiente eveniet vero ab veniam modi incidunt, id maiores rerum libero ipsa amet ducimus in, nulla labore obcaecati?</p>
+
+</body>
+</html>
