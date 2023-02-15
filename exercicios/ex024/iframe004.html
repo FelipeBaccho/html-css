@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt tempora id, molestiae inventore modi cupiditate officia sequi! Cupiditate corrupti cumque dolores susci pit, blanditiis porro eius sint quo recusandae quod est!</p>
+
+    <iframe src="paginas-extras/pagina004.html" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer"> Seu navegador nao e compativel com isso. </iframe>
+    <!--
+    A configuracao "sandbox='sandbox'" dentro do iframe faz com que nao seja possivel o site ali dentro capturar nenhum tipo de informacao, criando um nivel de seguranca. Pode ser substituido e configurado como "allow-same-origin" para permitir que sites da mesma pasta do servidor possam ser preenchidos, e "allow... outras configuracoes" que podem ser escolhidas ali dentro, como por exemplo "allow-forms" e "allow-scripts" para permitir certos tipos de execucao.
+    A configuracao "referrerpolicy='no-referrer'" dentro do iframe faz com que o site ali dentro nao colete nenhum tipo de informacao do usuario.
+    -->
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro esse magnam rem ullam quis dolores veniam, odit rerum repudiandae dolorem officia eligendi tenetur explicabo, corporis nesciunt voluptatem corrupti dolor unde!</p>
+</body>
+</html>
