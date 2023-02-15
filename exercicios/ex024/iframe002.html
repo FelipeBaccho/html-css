@@ -24,7 +24,15 @@
     <iframe src="paginas-extras/pagina001.html" frameborder="0" height="500" width="500">
         <p>Infelizmente seu navegador nao e compativel com isso.</p>
     </iframe>
-    <!-- Podem ser colocadas paginas internas no iframe, nesse caso a tabela criada no exercicio anterior, porem esse metodo faz com que os mecanismos de pesquisa nao vejam relacao entre os textos da pagina e a tabela dentro do iframe, o que prejudica a otimizacao de search engines.  -->
+    <!-- 
+    Podem ser colocadas paginas internas no iframe, nesse caso a tabela criada no exercicio anterior. Porem esse metodo faz com que os mecanismos de pesquisa tenham possivel dificuldade em ver relacao entre os textos da pagina e a tabela ou qualquer outro conteudo dentro do iframe, o que prejudica a otimizacao de search engines. Usar somente se necessario e evitar conteudos muito importantes dentro deles. 
+    
+    Outro problema causado pelo iframe é a dificuldade que softwares de leitura de tela para pessoas com necessidades especiais tem de ler o que esta dentro dele.
+
+    Problemas de usabilidade tambem podem ser causados como por exemplo: ao clicar em voltar a pagina no navegador, o mesmo nao sabe se volta a pagina que voce esta ou a pagina dentro do iframe; ao clicar em um link dentro do iframe que abre em nova aba o navegador nao sabe se abre essa nova aba no navegador principal ou no iframe; sites nao responsivos podem aparecer todos quebrados dentro do iframe.
+
+    Problemas de seguranca tambem ocorrem pois iframes abrem uma porta do seu site para os sites de terceiros inseridos nele, tomar cuidado com os sites que ira aplicar.
+    -->
 
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis illo magni vitae, quod enim repudiandae quos tenetur saepe eligendi beatae! Sit odio, quidem quaerat ducimus sint vero nesciunt provident a! Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, temporibus! Odio officia, rerum maxime nihil veritatis eveniet. Architecto incidunt, magnam deserunt cum atque reiciendis odit? Eligendi suscipit repudiandae facere aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, temporibus! Odio officia, rerum maxime nihil veritatis eveniet. Architecto incidunt, magnam deserunt cum atque reiciendis odit? Eligendi suscipit repudiandae facere aspernatur.Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, temporibus! Odio officia, rerum maxime nihil veritatis eveniet. Architecto incidunt, magnam deserunt cum atque reiciendis odit? Eligendi suscipit repudiandae facere aspernatur.</p>
 </body>
