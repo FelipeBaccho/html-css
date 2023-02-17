@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Meu primeiro formulário!</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="off"> 
+    <!-- "autocomplete='off'" desliga o autopreenchimento do navegador nos inputs -->
+    <!-- 
+        O formulário por padrão vem com o método "method='get'" que é para informações que não sejam sensíveis e faz com que a URL seja compartilhável (como pesquisas no google por exemplo). Suas limitações são: limite de 3000 bytes (mais ou menos 3000 letras); não podem ser enviadas fotos ou qualquer outro tipo de arquivo.
+        
+        Pode ser alterado para "post" para que as informações preenchidas e enviadas nos inputs não apareçam na URL, e para que possam ser ultrapassado o limite de 3000 bytes e enviados arquivos. Existe um porém que é: essas informações ainda aparecerão nos "DevTools", para  serem protegidas e criptografadas é preciso estudar HTTPS, que é uma configuração bem mais avançada.
+    -->
+
+        <p><label for="idnome">Nome: </label> 
+            <input type="text" name="nome" id="idnome"></p> 
+            <!-- "name" é mais útil para HTML e PHP -->
+            <!-- "id" é mais útil para JavaScript e para o uso de "label" -->
+
+        <p><label for="idsobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="idsobrenome"></p>
+            <!-- "label" serve para mostrar ao navegador que existe ligação entre o texto e a caixa de input a que ele se refere, essencial para mecanismos de pesquisa. Um bônus dessa configuração é que com ela ao clicar no texto de uma caixa de input, a caixa será ativada! -->
+
+        <p><input type="submit" value="Enviar"></p> 
+        <!-- botão "submit" ativa a ação "action" na tag "form", no caso envia a informação dos inputs para o arquivo "cadastro.php" lá contido. No caso não temos esse arquivo, mas podemos ver que houve tentativa de enviar a informação na URL que fica "file:///C:/Users/felip/Documents/Estudos/html-css/exercicios/ex025/cadastro.php?nome=Felipe&sobrenome=Baccho", que fica dessa maneira pelo "form" estar com "method='get'"-->
+
+    </form>
 </body>
 </html>
