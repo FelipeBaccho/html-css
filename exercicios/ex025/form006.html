@@ -8,8 +8,23 @@
 </head>
 <body>
     <h1>Testando formularios!</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
-
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+            <!-- O atributo "value" define a cor inicial que ira aparecer na caixa. -->
+        </p>
+        <p>
+            <label for="inivel">Nivel de satisfacao: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+            <!-- Por padrao permite escolher valor de 0 a 100, com os atributos "min" e "mas" podem ser definidos os valores desejados. -->
+            <!-- O atributo "value" define a cor inicial que ira aparecer na caixa. -->
+        </p>
+        <p>
+            <label for="ifoto">Foto de perfil: </label>
+            <input type="file" name="foto" id="ifoto">
+            <!-- Se fez necessario utilizar o metodo "post" para esse tipo de input. -->
+        </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
