@@ -8,5 +8,30 @@
 </head>
 <body>
     <h1>Testando formularios!</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Genero</legend>
+            <input type="radio" name="genero" id="igenmas" value="M"> <label for="igenmas">Masculino</label> <br>
+            <input type="radio" name="genero" id="igenfem" value="F"> <label for="igenfem">Feminino</label> <br>
+            <input type="radio" name="genero" id="igenout" value="O"> <label for="igenout">Outro</label> <br>
+            <input type="radio" name="genero" id="igennin" value="N" checked> <label for="igennin">Prefiro não informar</label> <br>
+            <!-- 
+                No input "radio" se faz necessario colocar o mesmo nome "name" para as diferentes opcoes, assim o usuario so consegue escolher uma delas.
+                O atributo "checked" faz com que a opcao venha escolhida por padrao, somente uma pode ser escolhida.
+            -->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos!</legend>
+            <input type="checkbox" name="espfut" id="iespfut"> <label for="iespfut">Futebol</label> <br>
+            <input type="checkbox" name="espbasq" id="iespbasq"> <label for="iespbasq">Basquete</label> <br>
+            <input type="checkbox" name="esptenis" id="iesptenis"> <label for="iesptenis">Tenis</label> <br>
+            <input type="checkbox" name="espvolei" id="iespvolei" checked> <label for="iespvolei">Volei</label> <br>
+            <!-- O atributo "checked" faz com que a opcao venha escolhida por padrao, podem ser quantas quiser. -->
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
